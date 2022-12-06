@@ -15,8 +15,9 @@ public class Test
 	
 	public static int MaxPrime(List<int> varx){
 		int[] temp_arr = varx.ToArray();
-		int res = 0, temp_var = temp_arr[i];
-		for (int i = 0; i < temp_arr.Length; i++){
+		int res = 0;
+		for (int i = 0, temp_var = 0; i < temp_arr.Length; i++){
+			temp_var = temp_arr[i];
 			if (temp_var % 2 == 0 && temp_var > res){
 				res = temp_var;
 			}
